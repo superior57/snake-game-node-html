@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@geckos.io/client": "^1.6.1",
+    "@geckos.io/server": "^1.6.1",
+    "socket.io": "2.3.0"
+  }
+}

@@ -1,0 +1,96 @@
+#initialScreen {
+	position: relative;
+  z-index: 1000;
+}
+
+#gameScreen {
+	position: relative;
+  z-index: 1000;
+}
+
+#scoreScreen {
+	position: relative;
+  z-index: 1000;
+}
+
+:root {
+	font-size: 15px;
+}
+
+html {
+	background: #000;
+}
+
+body {
+	font-family: Didot, "Didot LT STD", "Bodoni MT", "ltc-bodoni-175", "Hoefler Text", Garamond, "Times New Roman", serif;
+	color: #57585c;
+	color: var(--color-text);
+	background-color: #000;
+	overflow: hidden;
+}
+
+/* Color schemes */
+.demo-1 {
+	--color-text: #86eae7;
+	--color-link: #fff;
+	--color-link-hover: #86eae7;
+	--color-title: #fff;
+}
+
+.demo-2 {
+	--color-text: #ff53ff;
+	--color-link: #3c48fa;
+	--color-link-hover: #fff;
+	--color-title: #fff;
+}
+
+.demo-3 {
+	--color-text: #1ed97c;
+	--color-link: #fff;
+	--color-link-hover: #fff;
+	--color-title: #fff;
+}
+
+.demo-4 {
+	--color-text: #f0ea42;
+	--color-link: #ce8c32;
+	--color-link-hover: #fff;
+	--color-title: #ce8c32;
+}
+
+.demo-5 {
+	--color-text: #5c5ee7;
+	--color-link: #0ab5e4;
+	--color-link-hover: #fff;
+	--color-title: #0ab5e4;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-link);
+	outline: none;
+}
+
+a:hover,
+a:focus {
+	color: var(--color-link-hover);
+	outline: none;
+}
+
+.frame {
+	text-align: center;
+}
+
+@media screen and (min-width: 53em) {
+	.frame {
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.frame a {
+		pointer-events: auto;
+	}
+}
